@@ -1,0 +1,5 @@
+tap "homebrew/bundle"
+tap "homebrew/core"
+brew "nvm"
+brew "ruby-build"
+brew "rbenv"
