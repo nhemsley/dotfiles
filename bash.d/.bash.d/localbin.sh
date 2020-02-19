@@ -1,0 +1,1 @@
+/home/nick/.dotfiles/bash.d//localbin.sh
