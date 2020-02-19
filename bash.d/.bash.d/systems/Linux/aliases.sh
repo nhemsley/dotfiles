@@ -1,1 +1,0 @@
-/home/nick/.dotfiles/bash.d//systems/Linux/aliases.sh
