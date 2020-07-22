@@ -1,6 +1,6 @@
 sudo apt install $(cat ~/.dotfiles/config/apt-installs)
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" install --fast
 
 . ~/.dotfiles/bash.d/homebrew.sh
 
