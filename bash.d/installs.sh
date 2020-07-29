@@ -1,6 +1,13 @@
-# Iterate through each install, and add the bin path to PATH if it exists
-INSTALLS_DIR=$HOME/.installs
-INSTALLS=$(ls $INSTALLS_DIR)
-  for INSTALL in $INSTALLS; do
-  [ -d $INSTALLS_DIR/$INSTALL/bin ] && export PATH="$PATH:$INSTALLS_DIR/$INSTALL/bin"
-  done
+DIRS=$(ls ~/.installs)
+INSTALLS_DIR=$(dirname ~/.installs)/.installs
+
+
+for DIR in $DIRS; do
+  if [ -d $DIR/bin ]
+  then
+    export PATH=$PATH:$INSTALLS_DIR/$DIR/bin
+  else
+    export PATH=$PATH:$INSTALLS_DIR/$DIR
+  fi
+
+done
