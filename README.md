@@ -1,7 +1,7 @@
 # Install 
 
 ```sh
-wget -O https://github.com/nhemsley/dotfiles/blob/master/script/install.sh | bash
+wget -O https://raw.githubusercontent.com/nhemsley/dotfiles/master/script/install.sh | bash
   
 ```
 
