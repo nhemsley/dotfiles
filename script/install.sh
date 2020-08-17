@@ -1,4 +1,8 @@
-sudo apt install $(cat ~/.dotfiles/config/apt-installs)
+sudo apt install -y git
+
+git clone git@github.com:nhemsley/dotfiles.git ~/.dotfiles
+
+sudo apt install -y $(cat ~/.dotfiles/config/apt-installs)
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
