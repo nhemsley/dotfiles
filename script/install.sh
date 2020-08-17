@@ -1,6 +1,25 @@
-sudo apt install -y git
+#sudo apt install -y git
 
-git clone https://github.com/nhemsley/dotfiles.git ~/.dotfiles
+#git clone https://github.com/nhemsley/dotfiles.git ~/.dotfiles
+
+
+DOTFILES_BRANCHES=$(git -C ~/.dotfiles branch --list|sed s/\*\ //)
+
+echo "Available setup branches:"
+for BRANCH in $DOTFILES_BRANCHES
+do
+
+echo $DOTFILES_BRANCHES
+echo "Use Branch:"
+read -r DOTFILES_USE_BRANCH
+
+echo $DOTFILES_USE_BRANCH
+
+
+
+
+exit
+
 
 sudo apt install -y $(cat ~/.dotfiles/config/apt-installs)
 
