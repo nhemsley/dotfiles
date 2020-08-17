@@ -1,11 +1,12 @@
-sudo apt install -y git
-
-git clone https://github.com/nhemsley/dotfiles.git $DOTFILES
 
 
 DOTFILES_ROOT=~/.dotfiles
 DOTFILES_CONFIG=$DOTFILES_ROOT/config
 DOTFILES_ENVIRONMENTS=$(ls $DOTFILES_CONFIG/environments/)
+
+sudo apt install -y git
+
+git clone https://github.com/nhemsley/dotfiles.git $DOTFILES_ROOT
 
 echo "Available setup environments:"
 echo ""
