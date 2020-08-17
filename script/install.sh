@@ -1,6 +1,6 @@
-#sudo apt install -y git
+sudo apt install -y git
 
-#git clone https://github.com/nhemsley/dotfiles.git $DOTFILES
+git clone https://github.com/nhemsley/dotfiles.git $DOTFILES
 
 
 DOTFILES_ROOT=~/.dotfiles
@@ -29,7 +29,6 @@ DOTFILES_CURRENT_ENV_DIR=$DOTFILES_CONFIG/environments/$DOTFILES_CURRENT_ENV
 
 [ -f $DOTFILES_CURRENT_ENV_DIR/snap-installs ] && . $DOTFILES_CURRENT_ENV_DIR/snap-installs
 
-exit
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
