@@ -1,25 +1,29 @@
-sudo apt install -y git
+#sudo apt install -y git
 
-git clone https://github.com/nhemsley/dotfiles.git ~/.dotfiles
+#git clone https://github.com/nhemsley/dotfiles.git $DOTFILES
 
 
-DOTFILES_BRANCHES=$(git -C ~/.dotfiles branch --list|sed s/\*\ //)
+DOTFILES_ROOT = ~/.dotfiles
+DOTFILES_CONFIG = $DOTFILES_ROOT/config
+DOTFILES_ENVIRONMENTS=$(ls $DOTFILES/config/environments/)
 
-echo "Available setup branches:"
+echo "Available setup environments:"
 echo ""
-for BRANCH in $DOTFILES_BRANCHES
+
+for DOTFILES_ENVIRONMENT in $DOTFILES_ENVIRONMENTS
 do
-    echo $BRANCH
+    echo $DOTFILES_ENVIRONMENT
 done
 
 echo ""
-echo "Use Branch:"
+echo "Use Environment:"
 
-read -r DOTFILES_USE_BRANCH
+read -r DOTFILES_USE_ENVIRONMENT
 
-git -C ~/.dotfiles checkout $DOTFILES_USE_BRANCH
+echo $DOTFILES_USE_ENVIRONMENT > ~/.dotfiles/config/environment
 
-sudo apt install -y $(cat ~/.dotfiles/config/apt-installs)
+DOTFILES_CURRENT_ENVIRONMENT=$(cat $DOTFILES_CONFIG/environment)
+sudo apt install -y $(cat $DOTFILES_CONFIG/environments/$DOTFILES_CURRENT_ENVIRONMENT)
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
