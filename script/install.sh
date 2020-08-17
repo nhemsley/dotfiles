@@ -1,6 +1,6 @@
-#sudo apt install -y git
+sudo apt install -y git
 
-#git clone https://github.com/nhemsley/dotfiles.git ~/.dotfiles
+git clone https://github.com/nhemsley/dotfiles.git ~/.dotfiles
 
 
 DOTFILES_BRANCHES=$(git -C ~/.dotfiles branch --list|sed s/\*\ //)
