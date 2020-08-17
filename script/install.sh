@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-sudo apt install -y git
+sudo apt install -y git curl
 
 [ -d ~/.dotfiles ] || git clone https://github.com/nhemsley/dotfiles.git ~/.dotfiles
 
