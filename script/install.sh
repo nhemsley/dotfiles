@@ -12,7 +12,6 @@ brew install rcm
 
 rcup
 
-
 . ~/.dotfiles/config/snap-installs
 
 mkdir ~/.installs
