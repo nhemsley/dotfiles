@@ -1,6 +1,6 @@
 sudo apt install -y git
 
-git clone git@github.com:nhemsley/dotfiles.git ~/.dotfiles
+git clone https://github.com/nhemsley/dotfiles.git ~/.dotfiles
 
 sudo apt install -y $(cat ~/.dotfiles/config/apt-installs)
 
