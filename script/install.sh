@@ -6,20 +6,18 @@
 DOTFILES_BRANCHES=$(git -C ~/.dotfiles branch --list|sed s/\*\ //)
 
 echo "Available setup branches:"
+echo ""
 for BRANCH in $DOTFILES_BRANCHES
 do
+    echo $BRANCH
+done
 
-echo $DOTFILES_BRANCHES
+echo ""
 echo "Use Branch:"
+
 read -r DOTFILES_USE_BRANCH
 
-echo $DOTFILES_USE_BRANCH
-
-
-
-
-exit
-
+git -C ~/.dotfiles checkout $DOTFILES_USE_BRANCH
 
 sudo apt install -y $(cat ~/.dotfiles/config/apt-installs)
 
