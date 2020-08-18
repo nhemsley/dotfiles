@@ -40,6 +40,8 @@ brew install rcm
 
 rcup -f
 
+[ -f $DOTFILES_CURRENT_ENV_DIR/.Brewfile ]  && cp $DOTFILES_CURRENT_ENV_DIR/.Brewfile ~
+
 mkdir ~/.installs
 brew tap nhemsley/homebrew-env
 brew install homebrew-env
