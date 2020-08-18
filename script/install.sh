@@ -37,7 +37,7 @@ CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/insta
 
 brew install rcm
 
-rcup
+rcup -f
 
 mkdir ~/.installs
 brew tap nhemsley/homebrew-env
