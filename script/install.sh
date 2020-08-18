@@ -39,11 +39,10 @@ brew install rcm
 
 rcup
 
-. ~/.dotfiles/config/snap-installs
-
 mkdir ~/.installs
 brew tap nhemsley/homebrew-env
 brew install homebrew-env
 
 brew bundle
 
+. ~/.dotfiles/bash.d/homebrew-env.sh
