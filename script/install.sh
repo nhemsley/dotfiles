@@ -30,6 +30,7 @@ DOTFILES_CURRENT_ENV_DIR=$DOTFILES_CONFIG/environments/$DOTFILES_CURRENT_ENV
 
 [ -f $DOTFILES_CURRENT_ENV_DIR/snap-installs ] && . $DOTFILES_CURRENT_ENV_DIR/snap-installs
 
+[ -f $DOTFILES_CURRENT_ENV_DIR/.Brewfile ]  && cp $DOTFILES_CURRENT_ENV_DIR/.Brewfile ~
 
 CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
