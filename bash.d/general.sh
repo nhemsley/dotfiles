@@ -5,7 +5,10 @@ export SAVEHIST0=100000
 bind 'set completion-ignore-case on'
 # bind 'set completion-prefix-display-length 2'
 # bind 'set completion-map-case on'
-xmodmap ~/.Xmodmap
+
+#FIXME this should be run at install
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:swap_lalt_lctl']"
+dconf write /org/gnome/mutter/workspaces-only-on-primary false
 
 export CLICOLOR=1
 
