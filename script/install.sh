@@ -30,7 +30,7 @@ DOTFILES_CURRENT_ENV_DIR=$DOTFILES_CONFIG/environments/$DOTFILES_CURRENT_ENV
 
 [ -f $DOTFILES_CURRENT_ENV_DIR/snap-installs ] && . $DOTFILES_CURRENT_ENV_DIR/snap-installs
 
-CI=1 HOMEBREW_DEFAULT_PREFIX=~/.linuxbrew /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/rezural/install/dont-overwrite-homebrew-prefix-default/install.sh)"
+CI=1 HOMEBREW_PREFIX_DEFAULT=~/.linuxbrew /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/rezural/install/dont-overwrite-homebrew-prefix-default/install.sh)"
 
 . ~/.dotfiles/bash.d/homebrew.sh
 
