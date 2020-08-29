@@ -7,3 +7,7 @@ fonts-symbola
 git
 gnupg-agent
 htop
+libasound2-dev
+libxcb-render0-dev 
+libxcb-shape0-dev 
+libxcb-xfixes0-dev

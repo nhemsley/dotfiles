@@ -7,3 +7,6 @@ bash install.sh
 ```
 
 
+``` install rust nightly
+ rustup-init --profile default --default-toolchain nightly --no-modify-path -y
+ ```
