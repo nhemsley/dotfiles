@@ -46,4 +46,4 @@ brew install homebrew-env
 
 brew bundle
 
-. ~/.dotfiles/bash.d/homebrew-env.sh
+. ~/.dotfiles/bash.d/ihomebrew-env.sh
