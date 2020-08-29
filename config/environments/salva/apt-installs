@@ -10,25 +10,3 @@ fonts-symbola
 git
 gnupg-agent
 htop
-
-
-E: Unable to locate package ack
-E: Unable to locate package adb
-E: Package 'blueman' has no installation candidate
-E: Unable to locate package bluez-tools
-E: Unable to locate package dconf-editor
-E: Unable to locate package fceux
-E: Unable to locate package ffmpeg
-E: Package 'fonts-symbola' has no installation candidate
-E: Unable to locate package git-extras
-E: Unable to locate package git-flow
-E: Unable to locate package gitg
-E: Package 'gucharmap' has no installation candidate
-E: Package 'imagemagick' has no installation candidate
-E: Unable to locate package nautilus-image-converter
-E: Package 'net-tools' has no installation candidate
-E: Unable to locate package nmap
-E: Unable to locate package obs-studio
-E: Package 'ssh' has no installation candidate
-E: Unable to locate package ttf-ancient-fonts
-E: Unable to locate package vlc
