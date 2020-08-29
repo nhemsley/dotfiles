@@ -3,9 +3,6 @@ apt-transport-https
 autoconf
 bison
 curl
-dconf-editor
-ffmpeg
-vlc
 fonts-symbola
 git
 gnupg-agent
